@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia para crear un repositorio en GitHub</title>
+    <link rel="stylesheet" href="estlos.css">
+</head>
+<body>
+    <header>
+        <h1>Como crear un repositorio en GitHub</h1>
+        <P>Aprendamos paso a paso a crear, configurar y subir nuestros proyectos a GitHub</P>
+    </header>
+
+    <main>
+        <section class="introduccion">
+        <h2>Introduccion</h2>
+        <p>
+            GitHubes una plataforma que permite almacenar, compartir y colaborar en proyecos de desarrollo.
+            Los <strong>repositorios</strong> son el corazon de GitHub, ya que ahi se guarda el codigo y los archivos
+            de los proyectos.
+        </p>
+        </section>
+
+        <section class="pasos">
+            <h2>Pasos para crear un repositorio</h2>
+
+            <ol>
+                <li>
+                    <strong>Paso1:</strong> Ingresa a la pagina principal de 
+                    <a href="https://github.com" target="_blank">GitHub.com</a> e inicia sesion en tu cuenta.
+                </li>
+
+                <li>
+                    <strong>Paso2:</strong> Haz clic en el boton <em>"New"</em> o <em>"Nuevo repositorio</em>
+                    que aparece en la parte superior izquierda.
+                </li>
+
+                <li>
+                    <strong>Paso 3:</strong> Escribe el nombre de tu repositorio, por ejemplo
+                    <code>mi-primer-repositorio</code>, y agrega una breve descripcion del proyecto.
+                </li>
+
+                <li>
+                    <strong>Paso 4:</strong> Elige si el repositoriosera<strong>Publico</strong> o <strong>Privado</strong>
+                </li>
+
+                <li>
+                    <strong>Paso 5:</strong> (Opcional) Marca la casilla
+                    <em>"Add a README file"</em> para incluir una presentacion inicial del proyecto.
+                </li>
+
+                <li>
+                    <strong>Paso 6:</strong> Haz clic en el botn verde<strong>"Create repository"</strong> para finalizar la creacion.
+                </li>
+            </ol>
+        </section>
+
+        <section class="subida">
+            <h2>Como subir archivos desde Visual Studio Code</h2>
+            <p>
+                Una vez creado tu repositorio, podemos centrarlo con tu proyecto local desde Visual Studio Code.
+                Abre la terminal e ingresa los siguientes comandos:
+            </p>
+
+            <pre><code>git init
+                git add .
+                git commint -m "Primer commit"
+                git branch -M main
+                git remote add origin
+                https://github.com/tuusuario/mi-primer-repositorio.git
+                git push -u origin main
+            </code></pre>
+
+            <p>
+                Esto enviara todos sus archivos al repositorio remoto en github
+            </p>
+        </section>
+
+        <section class="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                Crear u repositorio en GitHub es el primer paso para compartir tu codigo, colaborar con otros
+                desarrolladores y mantener un control profesional de nuestros proyectos.
+                Siguiendo estos pasos, tendremos nuestro repositorio listo y funcionando en minutos.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <P>Instituto: Maria Auxiliadora</P>
+        <P>Alumno: Selvin Rodriguez</P>
+        <p>Asignatura: Diseño Web</p>
+        <P>Docente: Pablo Peña</P>
+        <P>Grado: III BTP INformatica "A":</P>
+        <P>Fecha: 25 de Octubre de 2025</P>
+    </footer>
+</body>
+</html>
