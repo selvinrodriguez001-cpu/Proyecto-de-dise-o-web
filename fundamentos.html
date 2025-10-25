@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #miContenedor {
+            background-color: #69eaaa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .caja {
+            background-color: #a2d1f8;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        #salida {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #de79f3;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="miContenedor">
+        <p>Bienvenido a la tienda</p>
+    </div>
+
+    <div class="caja">Pan</div>
+    <div class="caja">Galletas</div>
+
+    <p id="mensaje1">Que te valla bien</p>
+    <p id="mensaje2">Gracias por tu compra</p>
+
+    <div id="salida"></div>
+
+    <script>
+        const nombre = "Alexander";
+        const anio = 2000;
+        const anioActual = 2025;
+        const edad = anioActual - anio;
+
+        console.log("Nombre:", nombre);
+        console.log("Año de nacimiento:", anio);
+        console.log("Año actual:", anioActual);
+        console.log("Edad:", edad);
+
+        // Mostrar resultados en pantalla sin borrar el contenido del documento
+        const salida = document.getElementById("salida");
+        salida.innerHTML = `
+            <strong>Nombre:</strong> ${nombre}<br>
+            <strong>Año de nacimiento:</strong> ${anio}<br>
+            <strong>Año actual:</strong> ${anioActual}<br>
+            <strong>Edad:</strong> ${edad} años
+        `;
+
+        // Mostrar el título de la página
+        console.log("Título de la página:", document.title);
+
+        // Acceso a elementos del DOM
+        const contenedor = document.getElementById("miContenedor");
+        const primeraCaja = document.querySelector(".caja");
+        const primerMensaje = document.querySelector("#mensaje1");
+
+        // Mostrar contenido en consola
+        console.log("Texto del contenedor:", contenedor.innerText);
+        console.log("Primera caja:", primeraCaja.textContent);
+        console.log("Primer mensaje:", primerMensaje.textContent);
+
+        // Mostrar contenido también en pantalla
+        salida.innerHTML += `
+            <hr>
+            <strong>Contenedor:</strong> ${contenedor.innerText}<br>
+            <strong>Primera caja:</strong> ${primeraCaja.textContent}<br>
+            <strong>Mensaje:</strong> ${primerMensaje.textContent}
+        `;
+    </script>
+</body>
+</html>

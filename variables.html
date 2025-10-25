@@ -1,0 +1,74 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de un Script con Variables y Operadores Básicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6cb2f8;
+            margin: 30px;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1100ff;
+        }
+
+        .resultado {
+            background-color: #52c06e;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tarea 2: Creación de un Script JavaScript con Variables y Operadores Básicos</h1>
+    <h2>Alumno: Selvin Rodriguez</h2>
+
+    <div class="resultado" id="salida"></div>
+
+    <script>
+        // Variables
+        var nombre = "Geovany";
+        let edad = 20;
+        const pais = "Argentina";
+
+        // Mostrar información personal
+        let salida = "<h2>Información Personal</h2>";
+        salida += "Nombre: " + nombre + "<br>";
+        salida += "Edad: " + edad + "<br>";
+        salida += "País: " + pais + "<br><br>";
+
+        // Operadores Aritméticos
+        let suma = 5 + 5;
+        let resta = 10 - 5;
+        let multiplicacion = 5 * 10;
+        let division = 20 / 4;
+        let modulo = 10 % 2; // corregido (antes el residuo era invertido)
+
+        salida += "<h2>Operaciones Aritméticas</h2>";
+        salida += "Suma: " + suma + "<br>";
+        salida += "Resta: " + resta + "<br>";
+        salida += "Multiplicación: " + multiplicacion + "<br>";
+        salida += "División: " + division + "<br>";
+        salida += "Módulo: " + modulo + "<br><br>";
+
+        salida += "<strong>Fin del ejercicio</strong>";
+
+        // Mostrar resultados en el div
+        document.getElementById("salida").innerHTML = salida;
+    </script>
+
+</body>
+</html>
